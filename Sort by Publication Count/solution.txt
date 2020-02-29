@@ -1,0 +1,1 @@
+Adding the horizontal line with carat pointing upwards mimics a tab, and the toggle is therefore more straightforwad to both Abi and Tim.

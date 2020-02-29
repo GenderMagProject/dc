@@ -1,0 +1,3 @@
+Directions for creating an issue are not easily digestible and make it inconvenient for users to find the issues list. 
+
+<br><br>A user who is a selective reader (<b><i>Information Processing Style</b></i>) would skip the last paragraph, and end up tinkering around (<b><i>Learning Style</b></i>) for instructions on filing an issue.

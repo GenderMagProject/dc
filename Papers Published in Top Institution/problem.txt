@@ -1,0 +1,1 @@
+The original table is not intuituve and doesn't clearly indicate there is an option to filter through the lists. The checkboxes are misleading, while it has a purpose, it isn't meant for filtering. The numbers on the right side also aren't immediately apparent they are a rank.

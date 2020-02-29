@@ -1,0 +1,1 @@
+Issues are now categorized by labels for selective readers (<b><i>Information Processing Style</b></i>) to easily process while providing more context for users to confidently (<b><i>Computer Self-Efficacy</b></i>) (<b><i>Attitude Toward Risk</b></i>) move forward and choose the correct issue to work on.

@@ -1,0 +1,1 @@
+This was mitigated by limiting the list to display only 5 institutions, and removing the rank number at the end. This drew attention away from the checkbox actionability.

@@ -1,0 +1,5 @@
+The sentence with the contributing guidelines link now has hints that provides users with more information about what they can find in the 'contribute.md' file.
+
+<br></br><b><i>Motivations</b></i>: A task-oriented user now knows what to expect if they click on the contributing guidelines link and doesn't need to explore in order to complete their task. Also, this solution allows a technology-motivated user to purposefully explore a piece of software by knowing where potential paths lead.
+
+<br></br>Adding hints to create a clear path can also help users with: <b><i>comprehensive information processing style, risk aversion</b></i>

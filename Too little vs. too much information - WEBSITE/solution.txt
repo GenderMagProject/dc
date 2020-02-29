@@ -1,0 +1,1 @@
+This solution benefits both selective and comprehensive readers (<b><i>Information Processing Style</b></i>) since it provides only the essential information but allows users to click "Learn more.." if they feel it is insufficient. This keeps users from feeling overwhelmed while having the ability to gather more information.
