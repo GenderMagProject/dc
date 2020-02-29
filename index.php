@@ -37,24 +37,24 @@ if (isset($_GET[$name_cat_ls])) { $cat = $name_cat_ls; }
 	<div id="nav">
 		<div>
 			<div class="subTitle">Design changes in...</div>
-			<div class="sub<?php if($cat==$name_cat_survey) { echo ' selected'; } ?>"><a href="?<?php echo $name_cat_survey; ?>=true">Surveys</a></div>		
+			<div class="sub<?php if($cat==$name_cat_survey) { echo ' selected'; } ?>"><a href="<?php echo getLink($name_cat_survey,$cat); ?>">Surveys</a></div>		
 			<?php if($cat==$name_cat_survey) printDesList($name_cat_survey); ?>	
-			<div class="sub<?php if($cat==$name_cat_website) { echo ' selected'; } ?>"><a href="?<?php echo $name_cat_website; ?>=true">Websites</a></div>
+			<div class="sub<?php if($cat==$name_cat_website) { echo ' selected'; } ?>"><a href="<?php echo getLink($name_cat_website,$cat); ?>">Websites</a></div>
 			<?php if($cat==$name_cat_website) printDesList($name_cat_website); ?>			
-			<div class="sub<?php if($cat==$name_cat_opensource) { echo ' selected'; } ?>"><a href="?<?php echo $name_cat_opensource; ?>=true">Open-source projects</a></div>
+			<div class="sub<?php if($cat==$name_cat_opensource) { echo ' selected'; } ?>"><a href="<?php echo getLink($name_cat_opensource,$cat); ?>">Open-source projects</a></div>
 			<?php if($cat==$name_cat_opensource) printDesList($name_cat_opensource); ?>			
 		</div>
 		<div>
 			<div class="subTitle">Design changes by&nbsp;Facet&nbsp;<a href="">(?)</a>:</div>
 			<div class="sub<?php if($cat==$name_cat_m) { echo ' selected'; } ?>"><img src="<?php echo $name_cat_m; ?>-black.png" /><a href="<?php echo getLink($name_cat_m,$cat); ?>">Motivations</a></div>
 			<?php if($cat==$name_cat_m) printDesList($name_cat_m, true); ?>	
-			<div class="sub<?php if($cat==$name_cat_cse) { echo ' selected'; } ?>"><img src="<?php echo $name_cat_cse; ?>-black.png" /><a href="?<?php echo $name_cat_cse; ?>=true">Computer Self-Efficacy</a></div>
+			<div class="sub<?php if($cat==$name_cat_cse) { echo ' selected'; } ?>"><img src="<?php echo $name_cat_cse; ?>-black.png" /><a href="<?php echo getLink($name_cat_cse,$cat); ?>">Computer Self-Efficacy</a></div>
 			<?php if($cat==$name_cat_cse) printDesList($name_cat_cse, true); ?>	
-			<div class="sub<?php if($cat==$name_cat_atr) { echo ' selected'; } ?>"><img src="<?php echo $name_cat_atr; ?>-black.png" /><a href="?<?php echo $name_cat_atr; ?>=true">Attitude Toward Risk</a></div>
+			<div class="sub<?php if($cat==$name_cat_atr) { echo ' selected'; } ?>"><img src="<?php echo $name_cat_atr; ?>-black.png" /><a href="<?php echo getLink($name_cat_atr,$cat); ?>">Attitude Toward Risk</a></div>
 			<?php if($cat==$name_cat_atr) printDesList($name_cat_atr, true); ?>	
-			<div class="sub<?php if($cat==$name_cat_ips) { echo ' selected'; } ?>"><img src="<?php echo $name_cat_ips; ?>-black.png" /><a href="?<?php echo $name_cat_ips; ?>=true">Information Processing Style</a></div>
+			<div class="sub<?php if($cat==$name_cat_ips) { echo ' selected'; } ?>"><img src="<?php echo $name_cat_ips; ?>-black.png" /><a href="<?php echo getLink($name_cat_ips,$cat); ?>">Information Processing Style</a></div>
 			<?php if($cat==$name_cat_ips) printDesList($name_cat_ips, true); ?>	
-			<div class="sub<?php if($cat==$name_cat_ls) { echo ' selected'; } ?>"><img src="<?php echo $name_cat_ls; ?>-black.png" /><a href="?<?php echo $name_cat_ls; ?>=true">Learning Style</a></div>
+			<div class="sub<?php if($cat==$name_cat_ls) { echo ' selected'; } ?>"><img src="<?php echo $name_cat_ls; ?>-black.png" /><a href="<?php echo getLink($name_cat_ls,$cat); ?>">Learning Style</a></div>
 			<?php if($cat==$name_cat_ls) printDesList($name_cat_ls, true); ?>	
 		</div>
 		<div>
