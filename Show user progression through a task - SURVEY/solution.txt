@@ -1,1 +1,0 @@
-A progress bar has been added to the top of the page (<b><i>Learning Style</b></i>). Stars have been added next to required fields (<b><i>Attitude Toward Risk</b></i>) and an explanation of what the stars represent is available. 

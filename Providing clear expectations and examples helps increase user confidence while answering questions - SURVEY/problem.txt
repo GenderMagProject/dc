@@ -1,5 +1,0 @@
-Fields were marked with titles, but did not include examples or clarifications of the expectations for input.
-
-<br></br>Users with low computer self efficacy (<b><i>Computer Self-Efficacy</b></i>) blame themselves for not knowing exactly how to answer each question. 
-
-<br><br>Also affects users with: <b><i>risk aversion, comprehensive information processing style</b></i>

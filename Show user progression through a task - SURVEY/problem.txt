@@ -1,3 +1,0 @@
-Required fields are not marked and the user is unable to see how much progress they have made on the form.
-
-<br></br>The process oriented user (<b><i>Learning Style</b></i>) would want to know how close they are to completing their task and a risk averse user (<b><i>Attitude Toward Risk</b></i>) with rarely any spare time would want to know what fields are required and which fields can be diregarded.

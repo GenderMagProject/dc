@@ -1,5 +1,0 @@
-Now, users don't have to go through a sign-in page to see a list of common tasks.
-
-<br></br><b><i>Motivations</b></i>: By removing the sign-in barrier, task-motivated users can freely access general information with performing unfamiliar steps.
-
-<br></br>Taking down unfamilar barriers can also help users with: <b><i>risk aversion, process-oriented learning style, low computer self-efficacy</b></i>

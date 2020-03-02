@@ -1,1 +1,0 @@
-While this fix was specifically aimed at Tim's information processing style, it actually benefitted Abi's facets as well. The option to toggle isn't very obvious, and either persona wouldn't immediately know that option is available.

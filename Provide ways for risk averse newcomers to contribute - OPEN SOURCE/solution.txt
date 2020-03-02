@@ -1,1 +1,0 @@
-<br><br>An instructional "Work on documentation" section was added for risk averse users (<b><i>Attitude Toward Risk</b></i>). Additionally, links and bold face text are incoporated in the "Help us with Code" section to avoid tinkering (<b><i>Learning Style</b></i>).

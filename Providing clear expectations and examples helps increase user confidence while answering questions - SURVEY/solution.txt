@@ -1,5 +1,0 @@
-Added stars to required fields, clarifying statements (<i>'please state if it will be required or recommended'</i>), and an example (<i>'eg math placement test'</i>).
-
-<br></br>Users with low computer self efficacy (CSE) (<b><i>Computer Self-Efficacy</b></i>) now feel confident moving forward knowing that they're inputting correct information. Additionally a user with high CSE won't be frustrated with the survey since they'll receive fewer feedback errors.
-
-<br><br>Providing clear examples and expectations also helps users with: <b><i>risk aversion, comprehensive information processing style</b></i>

@@ -1,7 +1,0 @@
-Users must sign into Canvas to access general information. 
-
-<br><br>
-
-<b><i>Motivations</b></i>: If a task-oriented user is faced with performing extra steps (especially involving personal information) on the way to their goal; they feel obstructed by these unfamiliar barriers, and will abandon the task.
-
-<br><br>Also affects users with: <b><i>risk aversion, process-oriented learning style, low computer self-efficacy</b></i>
