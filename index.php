@@ -92,17 +92,22 @@ if (isset($_GET[$name_cat_ls])) { $cat = $name_cat_ls; }
 		<div class="stage">
 			<div class="before">
 				<div class="inner">
-					<div><span class="problem">Problem</span><br><?php echo $des["problem"]; ?></div>
-					<div><a href="<?php echo "{$des['title']}/{$before_img_filename}"; ?>"><img src="<?php echo "{$des['title']}/{$before_img_filename}"; ?>"></a></div>
+					<div>
+						<div class="problem">Problem</div>
+						<a href="<?php echo "{$des['title']}/{$before_img_filename}"; ?>"><img src="<?php echo "{$des['title']}/{$before_img_filename}"; ?>"></a><br />
+						<?php echo $des["problem"]; ?>
+					</div>
 				</div>
 			</div>
 		</div>
 		<div class="stage">
 			<div class="after">
 				<div class="inner">
-					<div><span class="solution">Solution</span><br><?php echo $des["solution"]; ?></div>
-					<?php if($des['evidence']) { ?><div class="evidence"><?php echo $des["evidence"]; ?></div><?php } ?>
-					<div><a href="<?php echo "{$des['title']}/{$after_img_filename}"; ?>"><img src="<?php echo "{$des['title']}/{$after_img_filename}"; ?>"></a></div>
+					<div>
+						<div class="solution">Solution</div>
+						<a href="<?php echo "{$des['title']}/{$after_img_filename}"; ?>"><img src="<?php echo "{$des['title']}/{$after_img_filename}"; ?>"></a><br />
+						<?php echo $des["solution"]; ?>
+					</div>
 				</div>
 			</div>
 		</div>
