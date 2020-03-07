@@ -1,13 +1,23 @@
 <?php
 
-$name_cat_survey = 'survey';
-$name_cat_opensource = 'opensource';
-$name_cat_website = 'website';
-$name_cat_m = 'm'; // motivations
-$name_cat_ips = 'ips'; // information processing style
-$name_cat_cse = 'cse'; // computer self-efficacy
-$name_cat_atr = 'atr'; // attitude toward risk
-$name_cat_ls = 'ls'; // learning style
+//$info_survey array('code' => 'survey'; 'name' => 'Surveys');
+
+$code_cat_survey = 'survey';
+$name_cat_survey = 'Surveys';
+$code_cat_opensource = 'opensource';
+$name_cat_opensource = 'Open Source Projects';
+$code_cat_website = 'website';
+$name_cat_website = 'Websites';
+$code_cat_m = 'm';
+$name_cat_m = 'Motivations';
+$code_cat_ips = 'ips';
+$name_cat_ips = 'Information Processing Style';
+$code_cat_cse = 'cse';
+$name_cat_cse = 'Computer Self-Efficacy';
+$code_cat_atr = 'atr';
+$name_cat_atr = 'Attitude Toward Risk';
+$code_cat_ls = 'ls';
+$name_cat_ls = 'Learning Style';
 $cats_filename = 'cats.txt';
 $problem_filename = 'problem.txt';
 $solution_filename = 'solution.txt';
@@ -15,7 +25,7 @@ $facets_filename = 'facets.txt';
 $evidence_filename = 'evidence.txt';
 $before_img_filename = 'zoom_before';
 $after_img_filename = 'zoom_after';
-$facets = array($name_cat_m,$name_cat_ls,$name_cat_atr,$name_cat_cse,$name_cat_ips);
+$facets = array($code_cat_m,$code_cat_ls,$code_cat_atr,$code_cat_cse,$code_cat_ips);
 
 // Return whether or not the design is in the given category
 // Input: Path to the design, name of category
