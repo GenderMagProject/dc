@@ -63,7 +63,7 @@ div.stage {
 	text-align:center;
 	font-size:145%;
 	clear:both;
-	background-color:#3B8183;
+	background-color:#1e57c8;
   color:#fff;
 }
 #designs .title img.facet {
@@ -142,7 +142,7 @@ div.stage {
 }
 #nav div.sub.selected, #nav div.sub.selected a {
   color:#000;
-  background-color:#F5634A;
+  background-color:#ed7d31;
 }
 #nav div.sub img {
   height:1rem;
