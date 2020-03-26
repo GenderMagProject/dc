@@ -59,33 +59,33 @@ div.stage {
   margin-left:15rem;
 }
 #designs .title {
-	padding:0.5rem;
-	text-align:center;
-	font-size:145%;
-	clear:both;
-	background-color:#3B8183;
+  padding:0.5rem;
+  text-align:center;
+  font-size:145%;
+  clear:both;
+  background-color:#1e57c8;
   color:#fff;
 }
 #designs .title img.facet {
-	border:none;
-	height:1.75rem;
-	padding-right:0.25rem;
-	padding-left:0.25rem;
-	float:right;
+  border:none;
+  height:1.75rem;
+  padding-right:0.25rem;
+  padding-left:0.25rem;
+  float:right;
 }
 #designs .before, #designs .after {
-	max-width:31rem;
+  max-width:31rem;
 }
 #designs .before div, #designs .after div {
-	margin-bottom:1rem;
+  margin-bottom:1rem;
 }
 #designs .before img, #designs .after img {
-	box-sizing:border-box;
+  box-sizing:border-box;
   -moz-box-sizing:border-box;
-  -webkit-box-sizing:border-box;	
-	max-width:100%;
-	width:auto;
-	border:1px solid #999999;
+  -webkit-box-sizing:border-box;  
+  max-width:100%;
+  width:auto;
+  border:1px solid #999999;
 }
 .designtitle {
   padding-top:0.5rem;
@@ -142,7 +142,7 @@ div.stage {
 }
 #nav div.sub.selected, #nav div.sub.selected a {
   color:#000;
-  background-color:#F5634A;
+  background-color:#ed7d31;
 }
 #nav div.sub img {
   height:1rem;
@@ -171,7 +171,7 @@ div.button {
   cursor:pointer;
 }
 .bolded {
-	font-weight:600;
+  font-weight:600;
 }
 .problem, .solution {
   font-size:120%;
@@ -180,26 +180,26 @@ div.button {
   text-decoration:underline;
 }
 div.stage {
-	float:left;
-	width:50%;
-	padding:1rem 0 1rem 0;
+  float:left;
+  width:50%;
+  padding:1rem 0 1rem 0;
 }
 div.before {
-	width:100%;
-	text-align:right;
-	float:right;
+  width:100%;
+  text-align:right;
+  float:right;
 }
 div.before .inner {
-	padding-right:1rem;
+  padding-right:1rem;
 }
 div.after {
-	width:100%;
-	text-align:left;
-	float:left;
+  width:100%;
+  text-align:left;
+  float:left;
 }
 div.after .inner {
-	padding-left:1rem;
-	border-left:1px solid #bbbbbb;
+  padding-left:1rem;
+  border-left:1px solid #bbbbbb;
 }
 div#explanation {
   font-size:110%;
