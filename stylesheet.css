@@ -141,8 +141,8 @@ div.stage {
   font-weight:bold;
 }
 #nav div.sub.selected, #nav div.sub.selected a {
-  color:#000;
-  background-color:#ed7d31;
+  color:#fff;
+  background-color:#1e57c8;
 }
 #nav div.sub img {
   height:1rem;
