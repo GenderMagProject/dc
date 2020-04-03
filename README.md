@@ -1,4 +1,4 @@
-IMPORTANT NOTES:
+**IMPORTANT NOTES**
 
 * Do NOT modify any of the following files unless you're doing so via Git and dcdev:
 functions.php
@@ -9,11 +9,11 @@ Any of the top-level *.png files (e.g., ls-black.png)
 
 * However, it IS OK to directly add/remove/modify any subfolders on the server (subfolders of the "dc" folder)
 
-== GenderMag Design Catalog ==
+# GenderMag Design Catalog
 
 The purpose of the design catalog is to provide ideas for making software user interfaces inclusive to more cognitive styles.
 
--- How to Add to the Catalog --
+## How to Add to the Catalog
 1. Create a new folder. The name of the folder is the name that will appear on the website.
 2. Add these files to the folder:
 	- cats.txt (the non-facet categories the design goes in, one per line. options: survey, opensource, website)
