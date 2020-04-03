@@ -25,6 +25,7 @@ $facets_filename = 'facets.txt';
 $evidence_filename = 'evidence.txt';
 $before_img_filename = 'zoom_before';
 $after_img_filename = 'zoom_after';
+$img_file_extensions = array('png','PNG','gif','GIF','jpg','JPG','jpeg','JPEG'); // allowed image file extensions
 $facets = array($code_cat_m,$code_cat_ls,$code_cat_atr,$code_cat_cse,$code_cat_ips);
 
 // Return whether or not the design is in the given category
@@ -44,6 +45,16 @@ function hasFacet($dir, $facet) {
 	$out = false;
 	$facets = getFacets($dir);
 	if(in_array($facet, $facets)) { $out = true; }
+	return $out;
+}
+
+function hasImg($dir, $img_filename) {
+	global $img_file_extensions;
+	$out = false;
+	foreach($img_file_extensions as $i) {
+		$img_path = "{$dir}/{$img_filename}.{$i}";
+		if(file_exists($img_path)) { $out = true; break; }
+	}
 	return $out;
 }
 

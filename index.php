@@ -96,7 +96,9 @@ if (isset($_GET[$code_cat_ls])) { $cat = $code_cat_ls; }
 				<div class="inner">
 					<div>
 						<div class="problem">Problem</div>
+						<?php if(hasImg($des['title'], $before_img_filename)) { ?>
 						<a href="<?php echo "{$des['title']}/{$before_img_filename}"; ?>"><img src="<?php echo "{$des['title']}/{$before_img_filename}"; ?>"></a><br />
+						<?php } ?>
 						<?php echo $des["problem"]; ?>
 					</div>
 				</div>
@@ -107,7 +109,9 @@ if (isset($_GET[$code_cat_ls])) { $cat = $code_cat_ls; }
 				<div class="inner">
 					<div>
 						<div class="solution">Solution</div>
+						<?php if(hasImg($des['title'], $after_img_filename)) { ?>
 						<a href="<?php echo "{$des['title']}/{$after_img_filename}"; ?>"><img src="<?php echo "{$des['title']}/{$after_img_filename}"; ?>"></a><br />
+						<?php } ?>
 						<?php echo $des["solution"]; ?>
 					</div>
 				</div>
