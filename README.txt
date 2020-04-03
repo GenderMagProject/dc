@@ -1,3 +1,14 @@
+IMPORTANT NOTES:
+
+* Do NOT modify any of the following files unless you're doing so via Git and dcdev:
+functions.php
+index.php
+stylesheet.css
+README.txt
+Any of the top-level *.png files (e.g., ls-black.png)
+
+* However, it IS OK to directly add/remove/modify any subfolders on the server (subfolders of the "dc" folder)
+
 == GenderMag Design Catalog ==
 
 The purpose of the design catalog is to provide ideas for making software user interfaces inclusive to more cognitive styles.
