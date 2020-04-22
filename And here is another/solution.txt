@@ -1,5 +1,0 @@
-Incorporating hover drop-down menus allows users to see all of the sub-topics that can be found on that page.
-
-<br></br><b><i>Attitude Toward Risk</b></i>: With this solution, a risk averse user knows exactly what information is under each tab and avoids wasting time clicking around. This doens't hinder a risk-tolerant user since they wouldn't have experienced the problem.
-
-<br></br>Hover drop down menus also help users with: <b><i>task-oriented motivations, comprehensive information processing style</b></i>

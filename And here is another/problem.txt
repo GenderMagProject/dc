@@ -1,6 +1,0 @@
-The tabs provide no additional information about the contents of the page, and forces users to view the page before knowing its contents.
-
-<br><br>
-<b><i>Attitude Toward Risk</b></i>: A risk averse user wants to clearly locate the tab with the information they are looking for instead of wasting time clicking around.
-
-<br><br> Also affects users with: <b><i>task-oriented motivations, comprehensive information processing style</b></i>
