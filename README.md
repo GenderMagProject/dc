@@ -11,7 +11,7 @@ Overall procedure for getting started and contributing:
 3. On _guille_, copy your changes from _gendermag\dcdev_ to _gendermag\dc_.
 
 ## How to Add to the Catalog
-1. Create a new folder. The name of the folder is the name that will appear on the website.
+1. Create a new top-level folder. The name of the folder is the name that will appear on the website.
 2. Add these files to the folder:
 	- cats.txt (the non-facet categories the design goes in, one per line. options: survey, opensource, website)
 	- problem.txt (why the design isn't inclusive to some cognitive styles)
