@@ -6,10 +6,10 @@
   - stylesheet.css
   - README.txt
   - Any of the top-level PNG files (e.g., ls-black.png)
-  
-* **If you're MMB**, ignore this note and see "How to Modify Other Files", below.
 
-* However, it IS OK to directly add/remove/modify any subfolders on the server (subfolders of the "dc" folder)
+* **If you're MMB**, ignore the note above and see "How to Modify Other Files", below.
+
+* It IS OK to directly add/remove/modify any subfolders on the server (subfolders of the "dc" folder).
 
 # GenderMag Design Catalog
 
