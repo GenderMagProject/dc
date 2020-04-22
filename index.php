@@ -71,7 +71,7 @@ if (isset($_GET[$code_cat_ls])) { $cat = $code_cat_ls; }
 				<span>The GenderMag Design Catalog</span>
 			</div>
 			<div id="explanation">
-				This website shows examples of designs that have been made more inclusive using <a href="http://gendermag.org" target="_blank">The GenderMag Method</a>.
+				This website shows evidence-based examples of designs that have been made more inclusive using <a href="http://gendermag.org" target="_blank">The GenderMag Method</a>.
 				The changes are described in terms of the <a href="">GenderMag cognitive facets</a> <span class="todo">Link to a page that explains the facets</span>.
 				If you would like to contribute your own pre- and post-GenderMag designs to this website, please email us at <a href="mailto:gendermag.method@gmail.com">gendermag.method@gmail.com</a>.
 			</div>
