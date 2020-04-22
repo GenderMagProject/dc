@@ -2,14 +2,11 @@
 
 The purpose of the GenderMag Design Catalog (http://gendermag.org/dc/) is to provide ideas for making software user interfaces inclusive to more cognitive styles.
 
-## About this Repository
-
-*dcdev* is the repository for the GenderMag Design Catalog dev site: http://gendermag.org/dcdev/. 
-
-## How to Modify Existing Catalog Files
-1. Clone this repository to your local machine.
+## Overview of How to Contribute
+**Prerequisites**: These instructions are for _dcdev_ repo collaborators with access to _gendermag\dc_ and _gendermag\dcdev_ on the OSU _guille_ server. Please contact Lara Letaw letawl@oregonstae.edu if you'd like to become a new collaborator.
+1. Clone the dev repo: _dcdev_ (https://github.com/llarall/dcdev).
 2. Modify files as needed, commit, push to origin.
-3. See "Deploying Changes to Live Site", below.
+3. On _guille_, copy your changes from _gendermag\dcdev_ to _gendermag\dc_.
 
 ## How to Add to the Catalog
 1. Create a new folder. The name of the folder is the name that will appear on the website.
@@ -40,7 +37,3 @@ The purpose of the GenderMag Design Catalog (http://gendermag.org/dc/) is to pro
   * Reference a single “prominent” facet to describe how the fix helps that type of user. Also, include how it doesn’t hinder a persona with the opposite end of the spectrum facet. (i.e., help risk aversion but doesn’t hurt risk tolerant) (**present tense**)
   * Use wording that applies to the fix (e.g., Better organization also helps users with:) and list the facets that were implicated with the problem column
   * Add a validation (e.g., user study) or a location where the changes were made (e.g., OSU curriculum proposal form) (**past tense**)
-
-## Deploying Changes to Live Site
-* Commit and push your changes to origin.
-* On _guille_, copy your changes from gendermag\dcdev to gendermag\dc
