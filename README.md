@@ -1,31 +1,26 @@
-**IMPORTANT NOTES**
-
-* Do NOT modify any of the following files unless you're doing so via Git and dcdev:
-  - functions.php
-  - index.php
-  - stylesheet.css
-  - README.txt
-  - Any of the top-level PNG files (e.g., ls-black.png)
-
-* **If you're MMB**, ignore the note above and see "How to Modify Other Files", below.
-
-* It IS OK to directly add/remove/modify any subfolders on the server (subfolders of the "dc" folder).
-
 # GenderMag Design Catalog
 
-The purpose of the design catalog is to provide ideas for making software user interfaces inclusive to more cognitive styles.
+The purpose of the design catalog (http://gendermag.org/dc/) is to provide ideas for making software user interfaces inclusive to more cognitive styles.
+
+## About this Repository
+
+*dcdev* is the repository for the GenderMag Design Catalog dev site: http://gendermag.org/dcdev/. 
+
+## How to Modify Existing Catalog Files
+1. Clone this repository to your local machine.
+2. Modify files as needed, commit, push to origin.
+3. See "Deploying Changes to Live Site", below.
 
 ## How to Add to the Catalog
-1. Access guille.eecs.oregonstate.edu\dept_www\research_www\gendermag\dc
-2. Create a new folder. The name of the folder is the name that will appear on the website.
-3. Add these files to the folder:
+1. Create a new folder. The name of the folder is the name that will appear on the website.
+2. Add these files to the folder:
 	- cats.txt (the non-facet categories the design goes in, one per line. options: survey, opensource, website)
 	- problem.txt (why the design isn't inclusive to some cognitive styles)
 	- solution.txt (how the design tries to solve the problem)
 	- facets.txt (one facet per line, use these abbreviations: m, cse, atr, ips, ls)
 	- zoom_before.png (what the design looked like before it was changed; png or jpg; other image formats might also work)
 	- zoom_after.png (what the design looked like after it was changed; png or jpg; other image formats might also work)
-4. See rubric below for more guidance
+3. See rubric below for more guidance
 
 ### Facets Cheat Sheet
 * m - Motivation
@@ -46,14 +41,6 @@ The purpose of the design catalog is to provide ideas for making software user i
   * Use wording that applies to the fix (e.g., Better organization also helps users with:) and list the facets that were implicated with the problem column
   * Add a validation (e.g., user study) or a location where the changes were made (e.g., OSU curriculum proposal form) (**past tense**)
 
-
-## How to Modify the Catalog Contents
-1. Access guille.eecs.oregonstate.edu\dept_www\research_www\gendermag\dc
-2. Modify any files inside any of the folders, as needed
-
-## How to Modify Other Files
-If you want to change functions.php, index.php, stylesheet.css, README.txt, or any of the top-level PNG files, contact the maintainer to become a project collaborator on GitHub...
-...unless you are MMB, in which case do the following:
-1. Access guille.eecs.oregonstate.edu\dept_www\research_www\gendermag\dc
-2. Make any changes you want
-3. Tell the maintaner you made the changes
+## Deploying Changes to Live Site
+* Commit and push your changes to origin.
+* On _guille_, copy your changes from gendermag\dcdev to gendermag\dc
