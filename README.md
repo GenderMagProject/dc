@@ -15,13 +15,6 @@
 
 The purpose of the design catalog is to provide ideas for making software user interfaces inclusive to more cognitive styles.
 
-## Facets Cheat Sheet
-* m - Motivation
-* cse - Computer Self-Efficacy
-* atr - Attitude Toward Risk 
-* ips - Information Processing Style
-* ls - Learning Style
-
 ## How to Add to the Catalog
 1. Access guille.eecs.oregonstate.edu\dept_www\research_www\gendermag\dc
 2. Create a new folder. The name of the folder is the name that will appear on the website.
@@ -33,6 +26,13 @@ The purpose of the design catalog is to provide ideas for making software user i
 	- zoom_before.png (what the design looked like before it was changed; png or jpg; other image formats might also work)
 	- zoom_after.png (what the design looked like after it was changed; png or jpg; other image formats might also work)
 4. See rubric below for more guidance
+
+### Facets Cheat Sheet
+* m - Motivation
+* cse - Computer Self-Efficacy
+* atr - Attitude Toward Risk 
+* ips - Information Processing Style
+* ls - Learning Style
 
 ### Rubric for adding a new design
 - Title: put solution first followed by verbage used in the facet description (e.g., helps with confidence, navigating, etc.)
