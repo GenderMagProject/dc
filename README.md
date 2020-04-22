@@ -1,6 +1,6 @@
 # GenderMag Design Catalog
 
-The purpose of the design catalog (http://gendermag.org/dc/) is to provide ideas for making software user interfaces inclusive to more cognitive styles.
+The purpose of the GenderMag Design Catalog (http://gendermag.org/dc/) is to provide ideas for making software user interfaces inclusive to more cognitive styles.
 
 ## About this Repository
 
