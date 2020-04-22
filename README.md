@@ -13,8 +13,7 @@ Any of the top-level PNG files (e.g., ls-black.png)
 
 The purpose of the design catalog is to provide ideas for making software user interfaces inclusive to more cognitive styles.
 
-## Quick Info: Facets Cheat Sheet
-Facets Cheat sheet
+## Facets Cheat Sheet
 * m - Motivation
 * cse - Computer Self-Efficacy
 * atr - Attitude Toward Risk 
