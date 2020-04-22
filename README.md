@@ -1,11 +1,12 @@
 **IMPORTANT NOTES**
 
-* Do NOT modify any of the following files unless you're doing so via Git and dcdev (or, **if you're MMB**, see "How to Modify Other Files", below):
-functions.php
-index.php
-stylesheet.css
-README.txt
-Any of the top-level PNG files (e.g., ls-black.png)
+* Do NOT modify any of the following files unless you're doing so via Git and dcdev:
+  - functions.php
+  - index.php
+  - stylesheet.css
+  - README.txt
+  - Any of the top-level PNG files (e.g., ls-black.png)
+**If you're MMB**, ignore this note and see "How to Modify Other Files", below.
 
 * However, it IS OK to directly add/remove/modify any subfolders on the server (subfolders of the "dc" folder)
 
