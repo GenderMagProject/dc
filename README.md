@@ -30,6 +30,7 @@ The purpose of the design catalog is to provide ideas for making software user i
 	- facets.txt (one facet per line, use these abbreviations: m, cse, atr, ips, ls)
 	- zoom_before.png (what the design looked like before it was changed; png or jpg; other image formats might also work)
 	- zoom_after.png (what the design looked like after it was changed; png or jpg; other image formats might also work)
+4. See rubric below for more guidance
 
 ### Rubric for adding a new design
 - Title: put solution first followed by verbage used in the facet description (e.g., helps with confidence, navigating, etc.)
