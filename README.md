@@ -3,12 +3,12 @@
 The purpose of the GenderMag Design Catalog (http://gendermag.org/dc/) is to provide ideas for making software user interfaces inclusive to more cognitive styles.
 
 ## Overview of How to Contribute
-**Prerequisites**: These instructions are for _dcdev_ repo collaborators with access to _gendermag\dc_ on the OSU _guille_ server. Please contact Lara Letaw at letawl@oregonstate.edu if you'd like to become a new collaborator.
+**Prerequisites**: These instructions are for _llarall/dc_ repo collaborators with access to _gendermag/dc_ on the OSU _guille_ server. Please contact Lara Letaw at letawl@oregonstate.edu if you'd like to become a new collaborator.
 
 Overall procedure for getting started and contributing:
-1. Clone the repo: _dcdev_ (https://github.com/llarall/dc).
+1. Clone the repo: https://github.com/llarall/dc.
 2. Modify files as needed, commit, push to origin.
-3. On _guille_, pull the changes to _gendermag\dc_.
+3. On _guille_, pull the changes to _gendermag/dc_.
 
 ## How to Add to the Catalog
 1. Create a new top-level folder. The name of the folder is the name that will appear on the website.
