@@ -1,6 +1,6 @@
 **IMPORTANT NOTES**
 
-* Do NOT modify any of the following files unless you're doing so via Git and dcdev (or, if you're MMB, see below):
+* Do NOT modify any of the following files unless you're doing so via Git and dcdev (or, **if you're MMB**, see "How to Modify Other Files", below):
 functions.php
 index.php
 stylesheet.css
