@@ -1,0 +1,7 @@
+The original table seems contradictory since the "Rank" filter is bolded but the numbers on the right side don't seem to be in order. However, the numbers on the right are actually the number of publications for each university and doesn't affect the rank.
+
+<br></br><b><i>Computer Self-Efficacy</b></i>: A user with low computer self-efficacy blames themselves for not understanding why the "Rank" filter doesn't match the ordering of the numbers on the right. 
+This would either cause them to spend more time attempting to understand it or abandon the task worried that they did something incorrectly.
+
+<br></br>Also affects users with: <b><i>task-oriented motivation, risk aversion, comprehensive information processing style, process-oriented learning style</b></i>
+

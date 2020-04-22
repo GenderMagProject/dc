@@ -1,0 +1,6 @@
+Contributing to an OSS project can be intimidating for newcomes, especially if they believe their only option requires altering the project's code.
+This project only provided instructions for how to complete a code contribution and gave no instructions or even indications that a documentation contribution was possible.
+
+<br><br><b><i>Learning Style</b></i>: A process-oriented learner wants to follow step-by-step instructions rather than tinker around the project or go through the coding setup (which requires much more work) to make a documentation contribution.
+
+<br></br>Also affects users with: <b><i>risk aversion, low computer self-efficacy </b></i>

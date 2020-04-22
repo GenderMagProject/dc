@@ -1,0 +1,8 @@
+A more detailed title and description were added to provide context for the issue in the project. 
+
+<br></br><b><i>Information Processing Style</i></b>: By providing more information about the issue, a comprehensive newcomer is more
+inclined to contribute as they can easily decide if it's in their skill level. This solution doesn't hinder a selective newcomer who prefers lists with bolded key words over text blocks.
+
+<br><br>
+
+Providing more context can also help users with: <b><i>low computer self-efficacy </b></i>

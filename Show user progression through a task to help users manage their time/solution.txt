@@ -1,0 +1,5 @@
+A progress bar is now at the top of the survey to let users know how much of the survey they have left to complete.
+
+<br></br><b><i>Attitude Toward Risk</b></i>: Risk averse users now are able to track their progress through the survey and know exactly how much is left. It also doesn't hurt risk tolerant users. 
+
+<br></br>Showing user progression through a task also helps users with: <b><i>process-oriented learning style</b></i>

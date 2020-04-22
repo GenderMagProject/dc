@@ -1,0 +1,5 @@
+Now there is an entire section dedicated to documentation contributions with step-by-step instructions.
+
+<br><br><b><i>Learning Style</b></i>: A process-oriented learner now has the instructions they're looking for in order to easily complete a documentation contribution. This also doesn't stop a tinker from exploring around the project as much as they want.
+
+<br><br>Providing step-by-step instructions also helps users with: <b><i>risk aversion, low computer self-efficacy </b></i>

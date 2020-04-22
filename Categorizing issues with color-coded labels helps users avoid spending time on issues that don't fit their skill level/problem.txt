@@ -1,0 +1,7 @@
+The issue list for this open source project doesn't allow users to easily parse through the issues and confidently select one that fits their skill level.
+<br></br>
+
+<b><i>Attitude Toward Risk</b></i>: A risk averse user doesn't want to waste time working on an issue that doesn't match their skill level.
+
+<br></br>
+Also affects users with: <b><i>comprehensive information processing style, task-oriented motivations, low computer self-efficacy</b></i>

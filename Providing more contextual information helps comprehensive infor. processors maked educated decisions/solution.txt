@@ -1,0 +1,5 @@
+Now there are separate sections for each persona which include a paragraph description and two types of forms to choose from.
+
+<br></br><b><i>Information processing style</b></i>: A user with a comprehensive information processing style now is given plenty of information in order to make an educated decision. This also doesn't hurt selective information processors since they can just choose one of the persona form options (in blue) rather than read the information before.
+
+<br></br> Providing more contextual information also helps users with: <b><i>task-oriented motivations, risk aversion</i></b>

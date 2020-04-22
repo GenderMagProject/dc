@@ -1,0 +1,5 @@
+The numbers on the right side of the table were removed.
+
+<br></br><b><i>Computer Self-Efficacy</b></i>: Now a user with low computer self-efficacy isn't confused by the inconsistency between filters and numbers and can confidently proceed. This solution also doesn't hurt users with high computer self-efficacy.
+
+<br></br>Removing contradicting information can also help users with: <b><i>task-oriented motivation, risk aversion, comprehensive information processing style, process-oriented learning style</b></i>

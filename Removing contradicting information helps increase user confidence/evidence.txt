@@ -1,0 +1,1 @@
+This redesign was created by Vorvoreanu et al. and validated through a <a href="ftp://ftp.cs.orst.edu/pub/burnett/chi19-GenderMag-findToFix.pdf" target="_blank">user study.</a>

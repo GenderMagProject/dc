@@ -1,0 +1,7 @@
+This single sentence provides little information of what a user can expect if they click "Contribute.md".
+
+<br><br>
+
+<b><i>Motivations</b></i>: A task-oriented user prefers a workflow that doesn't require exploration to complete their task. If they don't see a clear path, they may abandon the task.
+
+<br><br>Also affects users with: <b><i>comprehensive information processing style, risk aversion</b></i>

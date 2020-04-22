@@ -1,0 +1,7 @@
+Instructions for each OS were in different locations in the project
+
+<br><br>
+
+<b><i>Motivations</b></i>: A task-oriented user doesn't explore around  to gather up all the necessary instructions. If the instructions they need aren't organized cohesively they may abandon the task.
+
+<br></br> Also affects users with: <b>low computer self efficacy, risk aversion, process-oriented learning style</b>

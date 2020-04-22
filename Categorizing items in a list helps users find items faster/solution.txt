@@ -1,0 +1,5 @@
+Organizing the publications by category allows users to see all of the subtopics that can be found on the page. 
+<br><br>
+<b><i>Attitude Toward Risk</b></i>: With this solution, a risk averse user can identify the category they're looking for and avoid wasting time reading the full page. This doesn't hinder a risk-tolerant user since they wouldn't have experienced the problem.
+<br><br>
+Organizing the publications by category also helps users with: <b><i>comprehensive information processing style, task-oriented motivations</b></i>

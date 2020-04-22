@@ -1,0 +1,5 @@
+Numbered step-by-step instructions were added as well as a direct link to the "issue list".
+
+ <br></br><b><i>Information Processing Style</b></i>: This solution directs users with selective information processing style  to a list of instructions instead of a paragraph. The "issue list" is hyperlinked and doesn't require additional navigation. This also doesn't prevent tinkerers from learning through exploration.
+
+ <br></br>Incorporating numbered lists and hyperlinks also help users with: <b><i>task-oriented motivations, low computer self-efficacy</b></i>

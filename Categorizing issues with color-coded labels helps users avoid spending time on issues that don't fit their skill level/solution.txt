@@ -1,0 +1,7 @@
+Categorizing issues by color-coded labels allows users to map the skills needed for each issue.
+<br></br>
+
+<b><i>Attitude Toward Risk</b></i>: With this solution, a risk averse user can clearly identify the issue that best matches their skillset, and move forward without wasting time. This doesn't hinder a risk-tolerant user since they wouldn't have experienced this pain point.
+
+<br></br>
+Categorizing issues by color-coded labels also helps users with: <b><i>comprehensive information processing style, task-oriented motivations, low computer self-efficacy</b></i>

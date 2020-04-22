@@ -1,0 +1,7 @@
+Adding the "Learn more..." hyperlink gives users the freedom to choose whether or not they want to view more information,
+
+<br></br>
+<b><i>Attitude Toward Risk</b></i>: With this solution, a risk averse user isn't forced to read the full page - which could be a waste of time. This doesn't hinder a risk-tolerant user since they wouldn't have experienced this pain point. 
+
+<br><br>
+Encapsulating large chunks of information this way also benefits users with: <b><i>comprehensive information processing style, task-oriented motivations</b></i>
