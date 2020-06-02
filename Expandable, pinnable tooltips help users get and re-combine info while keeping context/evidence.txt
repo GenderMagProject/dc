@@ -1,0 +1,4 @@
+<a href="ftp://ftp.cs.orst.edu/pub/burnett/vlhcc15-IGprinciples.pdf">A Principled Evaluation for a Principled Idea Garden</a>,
+Will Jernigan, Amber Horvath, Michael Lee, Margaret Burnett, Taylor Cuilty, Sandeep Kuttal, Anicia Peters, Irwin Kwan, Faezeh Bahmani, Amy Ko,
+IEEE Symposium on Visual Languages and Human-Centric Computing, October 2015,
+235-243.
