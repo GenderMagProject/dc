@@ -18,6 +18,7 @@ $code_cat_atr = 'atr';
 $name_cat_atr = 'Attitude Toward Risk';
 $code_cat_ls = 'ls';
 $name_cat_ls = 'Learning Style';
+$short_title_filename = 'short_title.txt';
 $cats_filename = 'cats.txt';
 $problem_filename = 'problem.txt';
 $solution_filename = 'solution.txt';
@@ -58,11 +59,19 @@ function hasImg($dir, $img_filename) {
 	return $out;
 }
 
+function hasShortTitle($dir) {
+	global $short_title_filename;
+	$out = false;
+	$short_title_path = "{$dir}/{$short_title_filename}";
+	if(file_exists($short_title_path)) { $out = true; }
+	return $out;
+}
+
 function getProblem($dir) {
 	global $problem_filename;
 	$problem = '';
 	$problem_path = $dir.'/'.$problem_filename;
-	if(file_exists($problem_path)) $problem = file_get_contents($problem_path);
+	if(file_exists($problem_path)) { $problem = file_get_contents($problem_path); }
 	return $problem;
 }
 
@@ -70,7 +79,7 @@ function getSolution($dir) {
 	global $solution_filename;
 	$solution = '';
 	$solution_path = $dir.'/'.$solution_filename;
-	if(file_exists($solution_path)) $solution = file_get_contents($solution_path);
+	if(file_exists($solution_path)) { $solution = file_get_contents($solution_path); }
 	return $solution;
 }
 
@@ -78,7 +87,7 @@ function getFacets($dir) {
 	global $facets_filename;
 	$facets = '';
 	$facets_path = $dir.'/'.$facets_filename;
-	if(file_exists($facets_path)) $facets = file($facets_path, FILE_IGNORE_NEW_LINES);
+	if(file_exists($facets_path)) { $facets = file($facets_path, FILE_IGNORE_NEW_LINES); }
 	return $facets;
 }
 
@@ -86,8 +95,16 @@ function getEvidence($dir) {
 	global $evidence_filename;
 	$evidence = '';
 	$evidence_path = $dir.'/'.$evidence_filename;
-	if(file_exists($evidence_path)) $evidence = file_get_contents($evidence_path);
+	if(file_exists($evidence_path)) { $evidence = file_get_contents($evidence_path); }
 	return $evidence;
+}
+
+function getShortTitle($dir) {
+	global $short_title_filename;
+	$short_title = '';
+	$short_title_path = "{$dir}/{$short_title_filename}";
+	if(hasShortTitle($dir)) { $short_title = file_get_contents($short_title_path); }
+	return $short_title;
 }
 
 function dirNoSpaces($dir) {
@@ -150,9 +167,11 @@ function printDesList($cat=NULL, $is_facet=false) {
 	$desList = getDirs($cat);
 	if($desList) {
 		echo '<ul class="dashed">';
-		foreach($desList as $desName) {
-			$link = dirNoSpaces($desName);
-			echo "<li><a href=\"#{$link}\">{$desName}</a></li>";
+		foreach($desList as $desTitle) {
+			$displayTitle = $desTitle;
+			if(hasShortTitle($desTitle)) { $displayTitle = getShortTitle($desTitle); }
+			$link = dirNoSpaces($desTitle);
+			echo "<li><a href=\"#{$link}\">{$displayTitle}</a></li>";
 		}	
 	}
 	echo '</ul>';

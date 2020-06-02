@@ -80,12 +80,18 @@ if (isset($_GET[$code_cat_ls])) { $cat = $code_cat_ls; }
 		<?php
 		$desData = getDesData($cat);
 		foreach($desData as $des) {
-			$dirnospaces = dirNoSpaces($des["title"]);
+			$des_title = $des["title"];
+			$dirnospaces = dirNoSpaces($des_title);
+			$short_title = getShortTitle($des_title);
 		?>
 
-		<div class="title">
-			<a name="<?php echo $dirnospaces; ?>"></a><span class="bolded">Design</span>: <?php echo $des["title"]; ?>
-			<?php
+		<div class="title" id="<?php echo $dirnospaces; ?>">
+			<?php 
+			if(hasShortTitle($des_title)) { 
+				$short_title = getShortTitle($des_title);
+				echo "<span class=\"bolded\">{$short_title}</span>: "; 
+			}
+			echo $des["title"];
 			if($facets != '') {
 				foreach($des["facets"] as $facet) { echo "<img class=\"facet\" src=\"{$facet}-white.png\">"; }
 			}
