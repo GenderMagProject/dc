@@ -1,0 +1,3 @@
+<p>Tooltips stay open and can be moved anywhere on the screen, such as next to other open tooltips.</p>
+
+<p><strong>Information Processing Style</strong>: Users who favor a comprehensive information processing style can expand and pin tooltips (like the ‘for’ tooltip shown in the screenshot) so they can learn about and compare programming commands in a convenient way and at any time.</p>

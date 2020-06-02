@@ -20,6 +20,8 @@ I know this setup is a little unconventional, but it should be fine for our purp
 	- facets.txt (one facet per line, use these abbreviations: m, cse, atr, ips, ls)
 	- zoom_before.png (what the design looked like before it was changed; png or jpg; other image formats might also work)
 	- zoom_after.png (what the design looked like after it was changed; png or jpg; other image formats might also work)
+  - short_title.txt (a succinct description of the fix, maybe 2 or 3 words)
+
 3. See rubric below for more guidance
 
 ### Facets Cheat Sheet
@@ -31,6 +33,7 @@ I know this setup is a little unconventional, but it should be fine for our purp
 
 ### Rubric for adding a new design
 - Title: put solution first followed by verbage used in the facet description (e.g., helps with confidence, navigating, etc.)
+- Short title: follow the format of the other short titles.
 - Problem Column:
   * Problem statement about which items specifically in the UI are problematic (**past tense**)
   * A single facet is chosen as the “prominent” facet and used to describe why a user would run into issues (**present tense**)

@@ -1,0 +1,3 @@
+<p>To get help, users have to either leave their context (visit the dictionary) or open a tooltip that disappears once they clicked elsewhere. Users can't compare two definitions side-by-side.</p>
+
+<p><strong>Information Processing Style</strong>: Users are only allowed to see a tiny piece of documentation (a transient tooltip) or a huge amount (the dictionary). Comprehensive information processors want the in-between option: <em>All</em> and <em>only</em> the information they need to complete their task.</p>
