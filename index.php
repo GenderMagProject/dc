@@ -113,6 +113,11 @@ if (isset($_GET[$code_cat_ls])) { $cat = $code_cat_ls; }
 						<a href="<?php echo "{$des['title']}/{$after_img_filename}"; ?>"><img src="<?php echo "{$des['title']}/{$after_img_filename}"; ?>"></a><br />
 						<?php } ?>
 						<?php echo $des["solution"]; ?>
+						<?php if($des["evidence"]) { ?>
+						<p>
+							<strong><em>Evidence: </em></strong><?php echo $des["evidence"]; ?>
+						</p>
+						<?php } ?>
 					</div>
 				</div>
 			</div>
