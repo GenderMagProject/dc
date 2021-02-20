@@ -1,23 +1,5 @@
 <?php
 
-//$info_survey array('code' => 'survey'; 'name' => 'Surveys');
-
-$code_cat_survey = 'survey';
-$name_cat_survey = 'Surveys';
-$code_cat_opensource = 'opensource';
-$name_cat_opensource = 'Open Source Projects';
-$code_cat_website = 'website';
-$name_cat_website = 'Websites';
-$code_cat_m = 'm';
-$name_cat_m = 'Motivations';
-$code_cat_ips = 'ips';
-$name_cat_ips = 'Information Processing Style';
-$code_cat_cse = 'cse';
-$name_cat_cse = 'Computer Self-Efficacy';
-$code_cat_atr = 'atr';
-$name_cat_atr = 'Attitude Toward Risk';
-$code_cat_ls = 'ls';
-$name_cat_ls = 'Learning Style';
 $short_title_filename = 'short_title.txt';
 $cats_filename = 'cats.txt';
 $problem_filename = 'problem.txt';
@@ -26,12 +8,22 @@ $facets_filename = 'facets.txt';
 $evidence_filename = 'evidence.txt';
 $before_img_filename = 'zoom_before';
 $after_img_filename = 'zoom_after';
-$img_file_extensions = array('png','PNG','gif','GIF','jpg','JPG','jpeg','JPEG'); // allowed image file extensions
-$facets = array($code_cat_m,$code_cat_ls,$code_cat_atr,$code_cat_cse,$code_cat_ips);
 
-// Return whether or not the design is in the given category
-// Input: Path to the design, name of category
-// Output: Boolean
+$img_file_extensions = array('png','PNG','gif','GIF','jpg','JPG','jpeg','JPEG'); // allowed image file extensions
+
+$cat_ids = array(	"survey" => array("Surveys","surveys"),
+         					"website" => array("Websites","websites"),
+         					"confwebsite" => array("Conference Websites","conference websites"),
+         					"opensource" => array("Open-Source Projects","open-source projects"));
+
+$facet_ids = array(	"m" => array("Motivations","motivations"),
+           					"ls" => array("Learning Style","learning style"),
+           					"atr" => array("Attitude Toward Risk","attitude toward risk"),
+           					"cse" => array("Computer Self-Efficacy","computer self-efficacy"),
+           					"ips" => array("Information Processing Style","information processing"));
+
+$facets = array_keys($facet_ids);
+
 function hasCat($dir, $cat) {
 	global $cats_filename;
 	$out = false;
@@ -89,6 +81,14 @@ function getFacets($dir) {
 	$facets_path = $dir.'/'.$facets_filename;
 	if(file_exists($facets_path)) { $facets = file($facets_path, FILE_IGNORE_NEW_LINES); }
 	return $facets;
+}
+
+function getCats($dir) {
+	global $cats_filename;
+	$cats = '';
+	$cats_path = $dir.'/'.$cats_filename;
+	if(file_exists($cats_path)) { $cats = file($cats_path, FILE_IGNORE_NEW_LINES); }
+	return $cats;
 }
 
 function getEvidence($dir) {
@@ -151,12 +151,14 @@ function getDesData($cat=NULL) {
 		$solution = getSolution($dir);
 		$facets = getFacets($dir);
 		$evidence = getEvidence($dir);
+		$cats = getCats($dir);
 		$data = [
 			"title" => $dir, 
 			"problem" => $problem,
 			"solution" => $solution,
 			"facets" => $facets,
-			"evidence" => $evidence
+			"evidence" => $evidence,
+			"cats" => $cats
 		];
 		array_push($desData,$data);
 	}
@@ -171,18 +173,44 @@ function printDesList($cat=NULL, $is_facet=false) {
 			$displayTitle = $desTitle;
 			if(hasShortTitle($desTitle)) { $displayTitle = getShortTitle($desTitle); }
 			$link = dirNoSpaces($desTitle);
-			echo "<li><a href=\"#{$link}\">{$displayTitle}</a></li>";
+			echo "<li><a href=\"index.php#{$link}\">{$displayTitle}</a></li>";
 		}	
 	}
 	echo '</ul>';
 }
 
 function getLink($thisCat,$selectedCat) {
-	$catLink = "?{$thisCat}";
+	$catLink = '';
 	if($thisCat==$selectedCat) {
-		$catLink = '.';
+		$catLink = '#';
+	} else if($thisCat=='confwebsite') {
+		$catLink = 'conference-checklist.php?confwebsite';
+	} else {
+		$catLink = "index.php?{$thisCat}";
 	}
 	return $catLink;
+}
+
+function getFormattedButtonLink($thisSection,$selectedSection) {
+	global $cat_ids,$facet_ids;
+	if (array_key_exists($thisSection,$cat_ids)) {
+		$array = $cat_ids;
+	} elseif (array_key_exists($thisSection,$facet_ids)) {
+		$array = $facet_ids;
+	}
+	$buttonTitle = $array[$thisSection][1];
+	$buttonLink = getLink($thisSection,$selectedSection);
+	$buttonClass = '';
+	if($thisSection==$selectedSection) {
+		$buttonClass = 'selected';
+	}
+	return "<a href=\"{$buttonLink}\"><div><div class=\"{$buttonClass}\">&nbsp;{$buttonTitle}&nbsp;</div></div></a>";
+}
+
+function getAllButtonClass($currentSection) {
+	$allButtonClass = '';
+	if (!$currentSection) $allButtonClass = 'selected';
+	return $allButtonClass;
 }
 
 ?>

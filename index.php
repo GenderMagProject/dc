@@ -1,137 +1,58 @@
 <?php
-include('functions.php');
+include('header.php');
 ?>
+
 <?php
-$cat = NULL;
-
-// Don't change these conditionals unless you're sure the code will still be secure afterwards
-if (isset($_GET[$code_cat_survey])) { $cat = $code_cat_survey; }
-if (isset($_GET[$code_cat_opensource])) { $cat = $code_cat_opensource; }
-if (isset($_GET[$code_cat_website])) { $cat = $code_cat_website; }
-if (isset($_GET[$code_cat_atr])) { $cat = $code_cat_atr; }
-if (isset($_GET[$code_cat_ips])) { $cat = $code_cat_ips; }
-if (isset($_GET[$code_cat_m])) { $cat = $code_cat_m; }
-if (isset($_GET[$code_cat_cse])) { $cat = $code_cat_cse; }
-if (isset($_GET[$code_cat_ls])) { $cat = $code_cat_ls; }
+$desData = getDesData($current_section);
+foreach($desData as $des) {
+	$long_title = $des["title"];
+	$title = getShortTitle($long_title);
+	$dirnospaces = dirNoSpaces($long_title);
+	$before_img_path = "{$long_title}/{$before_img_filename}";
+	$after_img_path = "{$long_title}/{$after_img_filename}";
+	$problem_desc = $des["problem"];
+	$solution_desc = $des["solution"];
+	$evidence = $des["evidence"];
+	$facets = $des["facets"];
+	$cats = $des["cats"];
 ?>
 
-<!doctype html>
-<html>
-<head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132750618-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      
-      gtag('config', 'UA-132750618-1');
-    </script>
-	<title>The GenderMag Project | Design Catalog</title>
-	<meta charset="utf-8"> 
-	<link href="http://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css">
-	<link href="stylesheet.css" media="all" rel="stylesheet" type="text/css" />
-    <!-- Favicon: the little picture on the tab -->
-    <link href="fourtuple.png" rel="icon" type="image/x-icon" />	
-</head>
-<body>
-	<div id="nav">
-		<div>
-			<div class="subTitle">Design changes in...</div>
-			<div class="sub<?php if($cat==$code_cat_survey) { echo ' selected'; } ?>"><a href="<?php echo getLink($code_cat_survey,$cat); ?>">Surveys</a></div>		
-			<?php if($cat==$code_cat_survey) printDesList($code_cat_survey); ?>	
-			<div class="sub<?php if($cat==$code_cat_website) { echo ' selected'; } ?>"><a href="<?php echo getLink($code_cat_website,$cat); ?>">Websites</a></div>
-			<?php if($cat==$code_cat_website) printDesList($code_cat_website); ?>			
-			<div class="sub<?php if($cat==$code_cat_opensource) { echo ' selected'; } ?>"><a href="<?php echo getLink($code_cat_opensource,$cat); ?>">Open-source projects</a></div>
-			<?php if($cat==$code_cat_opensource) printDesList($code_cat_opensource); ?>			
-		</div>
-		<div>
-			<div class="subTitle">Design changes by&nbsp;Facet&nbsp;<a href="">(?)</a>:</div>
-
-			<div class="sub<?php if($cat==$code_cat_m) { echo ' selected'; } ?>"><img src="<?php echo $code_cat_m; ?>-black.png" alt="<?php echo $name_cat_m; ?>" /><a href="<?php echo getLink($code_cat_m,$cat); ?>">Motivations</a></div>
-			<?php if($cat==$code_cat_m) printDesList($code_cat_m, true); ?>	
-			<div class="sub<?php if($cat==$code_cat_cse) { echo ' selected'; } ?>"><img src="<?php echo $code_cat_cse; ?>-black.png" /><a href="<?php echo getLink($code_cat_cse,$cat); ?>">Computer Self-Efficacy</a></div>
-			<?php if($cat==$code_cat_cse) printDesList($code_cat_cse, true); ?>	
-			<div class="sub<?php if($cat==$code_cat_atr) { echo ' selected'; } ?>"><img src="<?php echo $code_cat_atr; ?>-black.png" /><a href="<?php echo getLink($code_cat_atr,$cat); ?>">Attitude Toward Risk</a></div>
-			<?php if($cat==$code_cat_atr) printDesList($code_cat_atr, true); ?>	
-			<div class="sub<?php if($cat==$code_cat_ips) { echo ' selected'; } ?>"><img src="<?php echo $code_cat_ips; ?>-black.png" /><a href="<?php echo getLink($code_cat_ips,$cat); ?>">Information Processing Style</a></div>
-			<?php if($cat==$code_cat_ips) printDesList($code_cat_ips, true); ?>	
-			<div class="sub<?php if($cat==$code_cat_ls) { echo ' selected'; } ?>"><img src="<?php echo $code_cat_ls; ?>-black.png" /><a href="<?php echo getLink($code_cat_ls,$cat); ?>">Learning Style</a></div>
-			<?php if($cat==$code_cat_ls) printDesList($code_cat_ls, true); ?>	
-		</div>
-		<div>
-			<div class="sub<?php if($cat==NULL) { echo ' selected'; } ?>"><a href=".">All design changes</a></div>
-			<?php if($cat==NULL) printDesList(); ?>
-		</div>		
+<div class="designtitle">
+  <div>
+    <div class="designshorttitle"><?php echo $title; ?></div>
+    <div class="designshortdesc"><?php echo $long_title; ?></div>
+  </div>
+  <div class="designbuttons">
+	  <div class="buttonwrap facetbuttons">
+	  	<?php foreach($facets as $facet) echo getFormattedButtonLink($facet,$current_section); ?>
+	  </div>
+	  <div class="buttonwrap catbuttons">
+	  	<?php foreach($cats as $cat) echo getFormattedButtonLink($cat,$current_section); ?>
+	  </div>
 	</div>
-	<div id="designs">
-		<div id="top">
-			<div id="titlebar">
-				<img src="fourtuple.png">
-				<span>The GenderMag Design Catalog</span>
-			</div>
-			<div id="explanation">
-				This website shows evidence-based examples of designs that have been made more inclusive using <a href="http://gendermag.org" target="_blank">The GenderMag Method</a>.
-				The changes are described in terms of the <a href="">GenderMag cognitive facets</a> <span class="todo">Link to a page that explains the facets</span>.
-				If you would like to contribute your own pre- and post-GenderMag designs to this website, please email us at <a href="mailto:gendermag.method@gmail.com">gendermag.method@gmail.com</a>.
-			</div>
-		</div>
+</div>
+<div class="design">
+  <div class="designbefore">
+    <img class="designstage" src="before.png" alt="Before" title="Before"><br/>
+    <a href="<?php echo $before_img_path; ?>"><img class="designimg" src="<?php echo $before_img_path; ?>"></a><br/>
+    <div class="designdesc"><?php echo $problem_desc; ?></div>
+  </div>
+  <div class="designafter">
+    <img class="designstage" src="after.png" alt="After" title="After"><br/>
+    <a href="<?php echo $after_img_path; ?>"><img class="designimg" src="<?php echo $after_img_path; ?>"></a><br/>
+    <div class="designdesc">
+    	<?php echo $solution_desc; ?>
+			<?php if($evidence) { ?>
+				<p><strong>Evidence: </strong><?php echo $evidence; ?></p>
+			<?php } ?>	
+    </div>
+  </div>
+</div>
 
-		<?php
-		$desData = getDesData($cat);
-		foreach($desData as $des) {
-			$des_title = $des["title"];
-			$dirnospaces = dirNoSpaces($des_title);
-			$short_title = getShortTitle($des_title);
-		?>
+<?php
+}
+?>
 
-		<div class="title" id="<?php echo $dirnospaces; ?>">
-			<?php 
-			if(hasShortTitle($des_title)) { 
-				$short_title = getShortTitle($des_title);
-				echo "<span class=\"bolded\">{$short_title}</span>: "; 
-			}
-			echo $des["title"];
-			if($facets != '') {
-				foreach($des["facets"] as $facet) { echo "<img class=\"facet\" src=\"{$facet}-white.png\">"; }
-			}
-			?>
-		</div>
-		<div class="stage">
-			<div class="before">
-				<div class="inner">
-					<div>
-						<div class="problem">Problem</div>
-						<?php if(hasImg($des['title'], $before_img_filename)) { ?>
-						<a href="<?php echo "{$des['title']}/{$before_img_filename}"; ?>"><img src="<?php echo "{$des['title']}/{$before_img_filename}"; ?>"></a><br />
-						<?php } ?>
-						<?php echo $des["problem"]; ?>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="stage">
-			<div class="after">
-				<div class="inner">
-					<div>
-						<div class="solution">Solution</div>
-						<?php if(hasImg($des['title'], $after_img_filename)) { ?>
-						<a href="<?php echo "{$des['title']}/{$after_img_filename}"; ?>"><img src="<?php echo "{$des['title']}/{$after_img_filename}"; ?>"></a><br />
-						<?php } ?>
-						<?php echo $des["solution"]; ?>
-						<?php if($des["evidence"]) { ?>
-						<p>
-							<strong><em>Evidence: </em></strong><?php echo $des["evidence"]; ?>
-						</p>
-						<?php } ?>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<?php
-		}
-		?>
-	</div>
-</body>
-</html>
+<?php
+include('footer.php');
+?>
