@@ -3,7 +3,7 @@
 The purpose of the GenderMag Design Catalog (http://gendermag.org/dc/) is to provide ideas for making software user interfaces inclusive to more cognitive styles.
 
 ## Overview of How to Contribute
-**Prerequisites**: These instructions are for _llarall/dc_ repo collaborators with access to _gendermag/dc_ on the OSU _guille_ server. Please contact Lara Letaw at letawl@oregonstate.edu if you'd like to become a new collaborator.
+**Prerequisites**: These instructions are for _GenderMagProject/dc_ repo collaborators with access to _gendermag/dc_ on the OSU _guille_ server. Please contact Lara Letaw at letawl@oregonstate.edu if you'd like to become a new collaborator.
 
 Overall procedure for getting started and contributing:
 1. Modify files in _gendermag/dc_ as needed.
@@ -20,6 +20,7 @@ I know this setup is a little unconventional, but it should be fine for our purp
 	- facets.txt (one facet per line, use these abbreviations: m, cse, atr, ips, ls)
 	- zoom_before.png (what the design looked like before it was changed; png or jpg; other image formats might also work)
 	- zoom_after.png (what the design looked like after it was changed; png or jpg; other image formats might also work)
+	- evidence.txt (what paper proves it's a good design change -- optional)
   - short_title.txt (a succinct description of the fix, maybe 2 or 3 words)
 
 3. See rubric below for more guidance
@@ -42,4 +43,5 @@ I know this setup is a little unconventional, but it should be fine for our purp
   * Solution statement about which items specifically in the UI were fixed (**past tense**)
   * Reference a single “prominent” facet to describe how the fix helps that type of user. Also, include how it doesn’t hinder a persona with the opposite end of the spectrum facet. (i.e., help risk aversion but doesn’t hurt risk tolerant) (**present tense**)
   * Use wording that applies to the fix (e.g., Better organization also helps users with:) and list the facets that were implicated with the problem column
-  * Add a validation (e.g., user study) or a location where the changes were made (e.g., OSU curriculum proposal form) (**past tense**)
+- Evidence File (optional):
+  * Add a validation (e.g., user study) (**past tense**)
