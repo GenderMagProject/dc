@@ -12,7 +12,7 @@ Overall procedure for getting started and contributing:
 I know this setup is a little unconventional, but it should be fine for our purposes for now.
 
 ## How to Add to the Catalog
-1. Create a new top-level folder. The name of the folder is the name that will appear on the website.
+1. Create a new top-level folder. The name of the folder is title (short description) of the design change.
 2. Add these files to the folder:
 	- cats.txt (the non-facet categories the design goes in, one per line. options: survey, opensource, website)
 	- problem.txt (why the design isn't inclusive to some cognitive styles)
@@ -21,7 +21,7 @@ I know this setup is a little unconventional, but it should be fine for our purp
 	- zoom_before.png (what the design looked like before it was changed; png or jpg; other image formats might also work)
 	- zoom_after.png (what the design looked like after it was changed; png or jpg; other image formats might also work)
 	- evidence.txt (what paper proves it's a good design change -- optional)
-  - short_title.txt (a succinct description of the fix, maybe 2 or 3 words)
+  - long_title.txt (a brief description of the problem / design change, about a sentence)
 
 3. See rubric below for more guidance
 
@@ -33,8 +33,8 @@ I know this setup is a little unconventional, but it should be fine for our purp
 * ls - Learning Style
 
 ### Rubric for adding a new design
-- Title: put solution first followed by verbage used in the facet description (e.g., helps with confidence, navigating, etc.)
-- Short title: follow the format of the other short titles.
+- Folder name / Title: follow the format of the other titles.
+- Long title: put solution first followed by verbage used in the facet description (e.g., helps with confidence, navigating, etc.)
 - Problem Column:
   * Problem statement about which items specifically in the UI are problematic (**past tense**)
   * A single facet is chosen as the “prominent” facet and used to describe why a user would run into issues (**present tense**)

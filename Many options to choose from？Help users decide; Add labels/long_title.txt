@@ -1,0 +1,1 @@
+Categorizing issues with color-coded labels helps users avoid spending time on issues that don't fit their skill level

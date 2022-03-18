@@ -6,20 +6,39 @@
   font-style: normal;
 }
 
+@font-face {
+    font-family: 'robotoregular';
+    src: url('Roboto-Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body,html {
   margin:0;
   padding:0;
   width:100%;
   height:100%;
-  font-family:'open_sansregular';
-  color:#33444d;
+  font-family:'robotoregular',sans-serif;
+  color: rgb(51, 51, 51);
+  font-size: 18px;
 }
-h1 {
-  font-size:135%;
+strong {
+  color: rgb(51, 51, 51);
+}
+a {
+  text-decoration: none;
+  color: #c15d00;
+}
+a:hover {
+  text-decoration: underline;
+}
+h1, h2, h3, h4, h5 {
+  color: rgb(18, 18, 18);
 }
 h2 {
-  font-size:110%;
   font-weight:bold;
+  font-size: 150%;
+  margin-top: 20px;
 }
 #pagebody {
   width:1020px;
@@ -37,32 +56,75 @@ h2 {
   width:100%;
   background-color:#1e57c8;
   color:white;
-  font-size:100%;
   margin-bottom:10px;
   font-weight:bold;
-  position:fixed;
-  height:100px;
 }
-#topbar div {
-  padding:10px 5px 10px 5px;
+#titleblock {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
-#topbar img {
-  vertical-align:middle;
-  width:20px;
-  margin-right:5px;
+#titleblock a {
+  color:white;
+  text-decoration:none;
 }
-#gradientbar {
-  position:fixed; 
-  top:100px; 
-  height:20px; 
-  width:100%; 
-  background-image: 
-  linear-gradient(180deg, rgba(255,255,255,1), rgba(255,255,255,0));
+#titleblock img {
+  height: 40px;
+  float: left;
+}
+#dctitle {
+  font-size: 25px;
+}
+div#filterblock {
+  margin-left: 20px;
+  margin-top: 40px;
+  padding: 10px;
+  background-color: #eeeeee;
+  border: 1px solid #cccccc;
+}
+#filterblock div div {
+  margin-right: 2px;
+}
+.filterstatus {
+  font-size: 70%;
+  font-weight: normal;
+  font-style: italic;
+}
+.buttonslabel {
+  font-weight: bold;
+  color: rgb(51, 51, 51);
+}
+.facetbuttonslabel {
+  margin-top: 10px;
+}
+#designslistlabel {
+  font-weight: bold;
+  color: rgb(51, 51, 51);
+  margin-top: 40px;
+  margin-left: 20px;
+}
+#designslist {
+  margin-top: 5px;
 }
 #subtitle {
-  font-size:80%;
   margin-left:25px;
   font-weight:normal;
+}
+div.intro, div.contents {
+  margin-left: 5px;
+  margin-right: 5px;
+  width: calc(100% - 10px);
+}
+div.intro {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  font-size: 110%;
+}
+div.contents {
+  margin-bottom: 60px;
+}
+div.contents, div.catsblock, div.facetsblock {
+  float: left;
+  margin-right: 20px;
 }
 .design {
   display:flex;
@@ -85,16 +147,17 @@ h2 {
   color:white;
   width:100%;
   margin:auto;
-  font-size:135%;
-}
-.designtitle > div {
-  padding:10px;
 }
 .designtitle > div.designbuttons {
   padding-top:0;
 }
+.designshorttitle {
+  font-weight:bold;
+  font-size: 150%;
+  padding: 10px 10px 5px 10px;
+}
 .designshortdesc {
-  font-size:70%;
+  padding: 0px 10px 5px 10px;
 }
 .designstage {
   height:45px
@@ -103,33 +166,16 @@ h2 {
   text-align:left;
   padding:0.5em;
 }
-#titleblock {
-  width:350px;
-}
-#titleblock a {
-  color:white;
-  text-decoration:none;
-}
-#filterblock {
-  width:650px;
-  text-align:right;
-  font-weight:normal;
-}
-#filterblock div {
-  margin:0;
-  padding:0;
-}
 .buttonwrap {
   display:flex;
   flex-wrap:wrap;
-  justify-content:right;
 }
 .buttonwrap div div {
-  margin:10px;
   border-radius:5px;
-  border:2px solid #1e57c8;
   color:#33444d;
-  font-size:90%;
+}
+.buttonwrap a {
+  text-decoration: none;
 }
 .facetbuttons div div {
   background-color:#600060;
@@ -147,7 +193,6 @@ h2 {
   justify-content:left; 
   padding:0;
   margin:0;
-  font-size:70%;
 }
 .designtitle .buttonwrap div div {
   margin:2px;
@@ -156,22 +201,28 @@ h2 {
 .designbuttons {
   display:flex;
   flex-wrap:wrap;
+  padding: 0px 8px 10px 8px;
+}
+div.backtotop {
+  padding: 0px 10px 10px 10px;
+  font-size: 11px;
+}
+div.backtotop a {
+  color: white;
 }
 #aboutlink {
   margin-left:25px;
   font-weight:normal;
-  font-size:80%;
   font-style:italic;
   text-decoration:underline;
 }
 .accordion {
   background-color: white;
-  color:rgb(235, 114, 0);
+  color: #c15d00;
   cursor: pointer;
   border: none;
   outline: none;
   transition: 0.4s;
-  font-size:120%;
 }
 .active, .accordion:hover {
   background-color: #FDEFE0; 
@@ -183,7 +234,53 @@ h2 {
   padding-top:20px;
 }
 .panel_headings{
-  color:rgb(235, 114, 0);
+  color: #c15d00;
+}
+#about, #checklist {
+  padding:0 10px 0 10px;
+}
+
+@media (max-width: 1040px) and (orientation: portrait) {
+  body, html, li, ol, ul, div, a {
+    font-size: 25px;
+  }
+  div#filterblock {
+    margin-left: 0px;
+  }
+  #filterblock div.buttonwrap {
+    margin-top: 10px;
+    display: block;
+  }
+  #filterblock div.buttonwrap div {
+    margin-bottom: 10px;
+  }
+  #designslistlabel {
+    margin-left: 10px;
+  }
+  .buttonslabel {
+    display: block;
+  }
+  .facetbuttonslabel {
+    margin-top: 30px;
+  }
+  .design > div {
+    width:100%;
+  }
+  .designstage {
+    height:80px
+  }
+}
+
+@media (max-width: 1040px) and (orientation: landscape) {
+  body, html, li, ol, ul, div, a {
+    font-size: 20px;
+  }
+  .design > div {
+    width:48%;
+  }
+  .designstage {
+    height:60px
+  }
 }
 
 @media (max-width: 1040px) {
@@ -194,26 +291,22 @@ h2 {
     display:none;
   }
   #topbar {
-    margin-bottom:0;
     position:relative;
     height:auto;
   }
   #topbar > div {
     width:100%;
   }
-  #gradientbar {
-    display:none;
-  }
-  .design {
-    margin-bottom:2em;
-  }
-  .design > div {
-    width:100%;
+  .contents li {
+    font-size: 25px;
   }
   .designimg {
     width:auto;
     padding:2% 0 2% 0;
     max-width:100%;
+  }
+  .design {
+    margin-bottom:2em;
   }
   .designtitle {
     text-align:center;

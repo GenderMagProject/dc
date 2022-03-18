@@ -32,34 +32,12 @@ gtag('config', 'UA-132750618-1');
 </head>
 
 <body>
+<a name="top"></a>
 
 <div id="topbar">
   <div id="titleblock">
-    <a href="/dc"><img src="dclogo.png">GenderMag Design Catalog</a><br>
-    <span id="subtitle">Examples of how to make your software inclusive</span><br>
-    <span id="aboutlink"><a href="about.php">(What is this website and how do I use it?)</a></span>
-  </div>
-  <div id="filterblock">
-    <div class="buttonwrap catbuttons">
-      <div>Design changes in...</div>
-      <?php 
-      foreach($cat_ids as $key => $val) echo getFormattedButtonLink($key,$current_section);
-      $all_button_class = getAllButtonClass($current_section);
-      ?>
-      <a href="."><div><div class="<?php echo $all_button_class; ?>">&nbsp;all&nbsp;</div></div></a>
-    </div>
-    <div class="buttonwrap facetbuttons">
-      <div>Design changes by facet:</div>
-      <?php 
-      foreach($facet_ids as $key => $val) echo getFormattedButtonLink($key,$current_section);
-      $all_button_class = getAllButtonClass($current_section);
-      ?>
-      <a href="."><div><div class="<?php echo $all_button_class; ?>">&nbsp;all&nbsp;</div></div></a>
-    </div>
+    <a href="/dc"><img src="dclogo.png"><span id="dctitle">GenderMag Design Catalog</span></a><br>
   </div>
 </div>
-<div id="gradientbar">&nbsp;</div>
-
-<div id="topspacer">&nbsp;</div>
 
 <div id="pagebody">

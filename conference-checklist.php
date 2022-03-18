@@ -2,6 +2,8 @@
 include('header.php');
 ?>
 
+<div id="checklist">
+
 <p><em>(We don't have design examples for this category yet, but we have a checklist!)</em></p>
 
 <h1>Conference Inclusivity Checklist</h1>
@@ -56,6 +58,8 @@ include('header.php');
 	<li>Multi-step actions (e.g., registration) should have progress bars.</li>    
 	<li>Ability to save data/progress when multiple steps are involved, with this information given at the start of the page.</li>  
 </ol>
+
+</div>
 
 <?php
 include('footer.php');

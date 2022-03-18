@@ -1,6 +1,6 @@
 <?php
 
-$short_title_filename = 'short_title.txt';
+$long_title_filename = 'long_title.txt';
 $cats_filename = 'cats.txt';
 $problem_filename = 'problem.txt';
 $solution_filename = 'solution.txt';
@@ -14,7 +14,7 @@ $img_file_extensions = array('png','PNG','gif','GIF','jpg','JPG','jpeg','JPEG');
 $cat_ids = array(	"survey" => array("Surveys","surveys"),
          					"website" => array("Websites","websites"),
          					"confwebsite" => array("Conference Websites","conference websites"),
-         					"opensource" => array("Open-Source Projects","open-source projects"));
+         					"opensource" => array("Open-Source Projects","open-source"));
 
 $facet_ids = array(	"m" => array("Motivations","motivations"),
            					"ls" => array("Learning Style","learning style"),
@@ -51,11 +51,11 @@ function hasImg($dir, $img_filename) {
 	return $out;
 }
 
-function hasShortTitle($dir) {
-	global $short_title_filename;
+function hasLongTitle($dir) {
+	global $long_title_filename;
 	$out = false;
-	$short_title_path = "{$dir}/{$short_title_filename}";
-	if(file_exists($short_title_path)) { $out = true; }
+	$long_title_path = "{$dir}/{$long_title_filename}";
+	if(file_exists($long_title_path)) { $out = true; }
 	return $out;
 }
 
@@ -99,12 +99,12 @@ function getEvidence($dir) {
 	return $evidence;
 }
 
-function getShortTitle($dir) {
-	global $short_title_filename;
-	$short_title = '';
-	$short_title_path = "{$dir}/{$short_title_filename}";
-	if(hasShortTitle($dir)) { $short_title = file_get_contents($short_title_path); }
-	return $short_title;
+function getLongTitle($dir) {
+	global $long_title_filename;
+	$long_title = '';
+	$long_title_path = "{$dir}/{$long_title_filename}";
+	if(hasLongTitle($dir)) { $long_title = file_get_contents($long_title_path); }
+	return $long_title;
 }
 
 function dirNoSpaces($dir) {
@@ -147,36 +147,24 @@ function getDesData($cat=NULL) {
 	$desData = array();
 	$dirs = getDirs($cat);
 	foreach($dirs as $dir) {
+		$long_title = getLongTitle($dir);
 		$problem = getProblem($dir);
 		$solution = getSolution($dir);
 		$facets = getFacets($dir);
 		$evidence = getEvidence($dir);
 		$cats = getCats($dir);
 		$data = [
-			"title" => $dir, 
+			"dir" => $dir, 
+			"long_title" => $long_title,
 			"problem" => $problem,
 			"solution" => $solution,
 			"facets" => $facets,
 			"evidence" => $evidence,
 			"cats" => $cats
 		];
-		array_push($desData,$data);
+		$desData[$dir] = $data;
 	}
 	return $desData;
-}
-
-function printDesList($cat=NULL, $is_facet=false) {
-	$desList = getDirs($cat);
-	if($desList) {
-		echo '<ul class="dashed">';
-		foreach($desList as $desTitle) {
-			$displayTitle = $desTitle;
-			if(hasShortTitle($desTitle)) { $displayTitle = getShortTitle($desTitle); }
-			$link = dirNoSpaces($desTitle);
-			echo "<li><a href=\"index.php#{$link}\">{$displayTitle}</a></li>";
-		}	
-	}
-	echo '</ul>';
 }
 
 function getLink($thisCat,$selectedCat) {
@@ -191,14 +179,18 @@ function getLink($thisCat,$selectedCat) {
 	return $catLink;
 }
 
-function getFormattedButtonLink($thisSection,$selectedSection) {
+function getSectionName($sectionId) {
 	global $cat_ids,$facet_ids;
-	if (array_key_exists($thisSection,$cat_ids)) {
+	if (array_key_exists($sectionId,$cat_ids)) {
 		$array = $cat_ids;
-	} elseif (array_key_exists($thisSection,$facet_ids)) {
+	} elseif (array_key_exists($sectionId,$facet_ids)) {
 		$array = $facet_ids;
 	}
-	$buttonTitle = $array[$thisSection][1];
+	return $array[$sectionId][1];
+}
+
+function getFormattedButtonLink($thisSection,$selectedSection) {
+	$buttonTitle = getSectionName($thisSection);
 	$buttonLink = getLink($thisSection,$selectedSection);
 	$buttonClass = '';
 	if($thisSection==$selectedSection) {

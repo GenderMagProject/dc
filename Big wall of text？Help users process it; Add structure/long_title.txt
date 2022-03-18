@@ -1,0 +1,1 @@
+Reformatting paragraphs of texts into encapsulated boxes helps users spend less time finding the correct information

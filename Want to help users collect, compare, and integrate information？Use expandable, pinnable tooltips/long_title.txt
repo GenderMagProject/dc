@@ -1,0 +1,1 @@
+Expandable, pinnable tooltips help users get and re-combine info while keeping context
