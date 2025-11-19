@@ -6,7 +6,7 @@ include('header.php');
 
 <h1>About the GenderMag Design Catalog</h1>
 
-<p>This website is a catalog of before/after examples of how to make your software more inclusive. Each design was improved using <a href="https://gendermag.org">GenderMag</a>. Click the filter buttons to navigate by category or GenderMag cognitive facet (explained below).</p>
+<p>This website is a catalog of before/after examples of how to make your software more inclusive. Each design was improved using <a href="http://gendermag.org">GenderMag</a>. Click the filter buttons to navigate by category or GenderMag cognitive facet (explained below).</p>
 
 <h2>What are the GenderMag cognitive facets?</h2> 
 
