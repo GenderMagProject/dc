@@ -59,6 +59,16 @@ function hasLongTitle($dir) {
 	return $out;
 }
 
+function getImgPath($dir, $img_filename) {
+	global $img_file_extensions;
+	$out_path = "{$dir}/{$img_filename}";
+	foreach($img_file_extensions as $i) {
+		$img_path = "{$dir}/{$img_filename}.{$i}";
+		if(file_exists($img_path)) { $out_path = $img_path; break; }
+	}
+	return $out_path;
+}
+
 function getProblem($dir) {
 	global $problem_filename;
 	$problem = '';

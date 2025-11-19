@@ -8,7 +8,9 @@ ksort($desData);
 ?>
 
 <div class="intro">
-	The software designs in this catalog had <strong>bias bugs</strong>. Using the <a href="https://gendermag.org">GenderMag method</a>, the designs were changed to be more inclusive. <a href="about.php">What is this site and how do I use it?</a>
+	The software designs in this catalog had <strong>bias bugs</strong>. Using the <a href="http://gendermag.org">GenderMag method</a>, the designs were changed to be more inclusive. <a href="about.php">What is this site and how do I use it?</a>
+
+	<p><a href="https://gendermag.org">Back to GenderMag.org</a></p>
 </div>
 
 <div class="contents">
@@ -55,8 +57,8 @@ foreach($desData as $des) {
 	$dir = $des["dir"];
 	$short_title = $dir;
 	$long_title = $des["long_title"];
-	$before_img_path = "$dir/$before_img_filename";
-	$after_img_path = "$dir/$after_img_filename";
+	$before_img_path = getImgPath($dir, $before_img_filename);
+	$after_img_path = getImgPath($dir, $after_img_filename);
 	$problem_desc = $des["problem"];
 	$solution_desc = $des["solution"];
 	$evidence = $des["evidence"];
