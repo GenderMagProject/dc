@@ -15,14 +15,18 @@ foreach(array_keys($facet_ids) as $fid) {
 <html>
 
 <head>
+
+
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-132750618-1"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVCTX3VQB6"></script>
 <script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'UA-132750618-1');
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EVCTX3VQB6');
 </script>
+
 <title>The GenderMag Project | Design Catalog</title>
 <meta charset="utf-8"> 
 <link href="stylesheet.css" media="all" rel="stylesheet" type="text/css" />
