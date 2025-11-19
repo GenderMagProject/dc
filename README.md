@@ -7,7 +7,10 @@ The purpose of the GenderMag Design Catalog (http://gendermag.org/dc/) is to pro
 
 Overall procedure for getting started and contributing:
 1. Modify files in _gendermag/dc_ as needed.
-2. If you feel like it, commit, push to origin---or you can wait for another maintainer to do that.
+2. If you feel like it, update GitHub:
+    1. Add the guille server address as a local repository.
+    2. **DO NOT** pull changes from GitHub, that will overwrite the live files. 
+    3. Commit, then push to origin.
 
 I know this setup is a little unconventional, but it should be fine for our purposes for now.
 
